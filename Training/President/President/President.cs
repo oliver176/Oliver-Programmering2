@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace President
 {
@@ -26,6 +22,7 @@ namespace President
         }
         public void Present()
         {
+            Console.Clear();
             Console.WriteLine(name);
             Console.WriteLine("\nEnvironment priority: " + environmentPriority);
             Console.WriteLine("Defense priority: " + defensePriority);

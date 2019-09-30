@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace President
+﻿namespace President
 {
     class Land
     {
@@ -12,6 +6,12 @@ namespace President
         int BNP;
         int skatt;
         int area;
+        public string name;
+
+        public Land(string n)
+        {
+            name = n;
+        }
 
 
     }
