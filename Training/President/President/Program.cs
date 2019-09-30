@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace President
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             var landList = new List<Land>();
 
@@ -29,12 +29,13 @@ namespace President
                 Console.WriteLine("1: Present presídent");
                 Console.WriteLine("2: Hey man do u want to pass new law?!");
                 Console.WriteLine("3: Present country");
+
                 var keyRead = Console.ReadKey(true).Key;
                 if (keyRead == ConsoleKey.D1)
                 {
                     obama.Present();
                 }
-                if (keyRead == ConsoleKey.D2)
+                else if (keyRead == ConsoleKey.D2)
                 {
                     Console.Clear();
                     Console.WriteLine("How much u care about environment? 0-100");
@@ -59,10 +60,10 @@ namespace President
                     Console.WriteLine("Press enter to continue");
                     Console.ReadLine();
                     Console.Clear();
-
                 }
-                if (keyRead == ConsoleKey.D3)
+                else if (keyRead == ConsoleKey.D3)
                 {
+                    Console.WriteLine("222");
                     for (int i = 0; i < antalLand; i++)
                     {
                         Console.WriteLine("dsdsdsdsdsdssd");
@@ -71,7 +72,6 @@ namespace President
                     }
                 }
             }
-
         }
     }
 }

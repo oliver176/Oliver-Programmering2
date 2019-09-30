@@ -21,7 +21,7 @@ namespace President
             population = generator.Next(1000000, 10000000);
             skatt = generator.Next(0, 40);
             area = generator.Next(50000, 500000);
-            BNP = generator.Next(10^7, 10^8);
+            BNP = generator.Next(Math.Pow(10, 7), Math.Pow(10, 8));
             BNPperCap = BNP / population;
         }
         public void Present()
