@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F5665758-31ED-4259-8E2F-D78DB0C56D81}</ProjectGuid>
+    <ProjectGuid>{BDF060FA-EC9C-4E0C-90C1-F304DDA8E06E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Du_ska_va_president_</RootNamespace>
-    <AssemblyName>Du ska va president!</AssemblyName>
+    <RootNamespace>President</RootNamespace>
+    <AssemblyName>President</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,8 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Land.cs" />
-    <Compile Include="President.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

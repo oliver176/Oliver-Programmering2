@@ -4,36 +4,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Du_ska_va_president_
+namespace President
 {
     class Program
     {
         static void Main(string[] args)
         {
-            var keyRead = Console.ReadKey(true).Key;
-            var landList = new List<Land>();
+            President obama = new President("Obama");
 
-            Console.WriteLine("How many lands do you want to make?");
-
-            for (int i = 0; i < length; i++)
-            {
-
-            }
-
-
-            Console.WriteLine("Name the president!");
-            President obama = new President(Console.ReadLine());
-            Console.Clear();
             Console.WriteLine("1: Present");
             Console.WriteLine("2: Hey man do u want to pass new law?!");
 
             string input = Console.ReadLine();
 
-            if (keyRead == ConsoleKey.D1)
+            if (input == "1")
             {
                 obama.Present();
             }
-            if (keyRead == ConsoleKey.D2)
+            if (input == "2")
             {
                 Console.WriteLine("How much u care about environment? 0-100");
                 int.TryParse(Console.ReadLine(), out int eCare);
