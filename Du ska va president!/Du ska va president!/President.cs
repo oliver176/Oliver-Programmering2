@@ -8,7 +8,7 @@ namespace Du_ska_va_president_
 {
     class President
     {
-        public string name = "";
+        public string name;
         int environmentPriority;
         int defensePriority;
         int healthcarePriority;
@@ -39,6 +39,7 @@ namespace Du_ska_va_president_
             defensePriority += bribe;
             healthcarePriority += bribe;
             corruption += bribe / 10;
+
             if (e < environmentPriority && d < defensePriority && h < healthcarePriority)
             {
                 return true;
