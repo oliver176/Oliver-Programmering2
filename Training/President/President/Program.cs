@@ -26,12 +26,12 @@ namespace President
 
             while (true)
             {
-                Console.WriteLine("1: Present");
+                Console.WriteLine("1: Present presídent");
                 Console.WriteLine("2: Hey man do u want to pass new law?!");
+                Console.WriteLine("3: Present country");
                 var keyRead = Console.ReadKey(true).Key;
                 if (keyRead == ConsoleKey.D1)
                 {
-                    Console.Clear();
                     obama.Present();
                 }
                 if (keyRead == ConsoleKey.D2)
@@ -60,6 +60,15 @@ namespace President
                     Console.ReadLine();
                     Console.Clear();
 
+                }
+                if (keyRead == ConsoleKey.D3)
+                {
+                    for (int i = 0; i < antalLand; i++)
+                    {
+                        Console.WriteLine("dsdsdsdsdsdssd");
+                        landList.ForEach(item => item.Present());
+                        Console.ReadLine();
+                    }
                 }
             }
 
