@@ -63,10 +63,9 @@ namespace President
                 }
                 else if (keyRead == ConsoleKey.D3)
                 {
-                    Console.WriteLine("222");
+                    Console.Clear();
                     for (int i = 0; i < antalLand; i++)
                     {
-                        Console.WriteLine("dsdsdsdsdsdssd");
                         landList.ForEach(item => item.Present());
                         Console.ReadLine();
                     }
